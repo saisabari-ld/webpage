@@ -306,7 +306,33 @@ h1, h2, h3{
 /* Mobile first approach */
 @media (max-width: 768px) {
   /* Mobile styles go here */
-  
+  body{
+    height: auto;
+    width: auto;
+  }
+  .title h2{
+        font-size: 2rem;
+    }
+    .work-bottom{
+        grid-template-columns: repeat(auto);
+    }
+    .portfolio-grid{
+        grid-template-columns: repeat(auto);
+    }
+    .portfolio-grid > div{
+        height: auto;
+        overflow: hidden;
+    }
+    .portfolio-grid > div img{
+        height: auto;
+        object-fit: cover;
+    }
+    .contact-left form .form-control{
+        max-width: auto;
+    }
+    .footer-content ul{
+        flex-direction:row;
+    }
 }
 
 /* Tablet styles */
