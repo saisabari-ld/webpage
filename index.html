@@ -310,6 +310,10 @@ h1, h2, h3{
     height: auto;
     width: auto;
   }
+  .header {
+    /* Adjust styles for smaller screens */
+    background-attachment: scroll; /* Change background attachment for smaller screens */
+  }
   .title h2{
         font-size: 2rem;
     }
@@ -333,16 +337,91 @@ h1, h2, h3{
     .footer-content ul{
         flex-direction:row;
     }
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: auto;
+    height: auto;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
 }
 
 /* Tablet styles */
 @media (min-width: 769px) and (max-width: 1024px) {
   /* Tablet styles go here */
+  body{
+    height: auto;
+    width: auto;
+  }
+  .title h2{
+        font-size: 2rem;
+    }
+    .work-bottom{
+        grid-template-columns: repeat(auto);
+    }
+    .portfolio-grid{
+        grid-template-columns: repeat(auto);
+    }
+    .portfolio-grid > div{
+        height: auto;
+        overflow: hidden;
+    }
+    .portfolio-grid > div img{
+        height: auto;
+        object-fit: cover;
+    }
+    .contact-left form .form-control{
+        max-width: auto;
+    }
+    .footer-content ul{
+        flex-direction:row;
+    }
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: auto;
+    height: auto;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
 }
 
 /* Desktop styles */
 @media (min-width: 1025px) {
   /* Desktop styles go here */
+  body{
+    height: auto;
+    width: auto;
+  }
+  .title h2{
+        font-size: 2rem;
+    }
+    .work-bottom{
+        grid-template-columns: repeat(auto);
+    }
+    .portfolio-grid{
+        grid-template-columns: repeat(auto);
+    }
+    .portfolio-grid > div{
+        height: auto;
+        overflow: hidden;
+    }
+    .portfolio-grid > div img{
+        height: auto;
+        object-fit: cover;
+    }
+    .contact-left form .form-control{
+        max-width: auto;
+    }
+    .footer-content ul{
+        flex-direction:row;
+    }
+    .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: auto;
+    height: auto;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
 }
 
 @media(min-width: 450px){
